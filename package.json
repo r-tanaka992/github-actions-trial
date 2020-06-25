@@ -16,6 +16,7 @@
     "wait-on": "^5.0.1"
   },
   "devDependencies": {
+    "@storybook/vue": "^5.3.19",
     "@vue/cli-plugin-babel": "~4.4.0",
     "@vue/cli-plugin-e2e-cypress": "~4.4.0",
     "@vue/cli-plugin-eslint": "~4.4.0",
