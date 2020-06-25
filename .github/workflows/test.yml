@@ -42,7 +42,6 @@ jobs:
           name: my-artifact
           path: path/to/artifact/world.txt
 
-  # ユニットテスト
   unit-test:
     name: unit-test
     runs-on: ubuntu-latest
@@ -53,7 +52,6 @@ jobs:
       - name: Run test
         run: yarn test:unit
 
-  # E2Eテスト
   e2e-test:
     name: e2e-test
     runs-on: ubuntu-latest
@@ -64,7 +62,6 @@ jobs:
       - name: Run test
         run: yarn test:e2e:headless
 
-  # lint
   lint:
     name: lint
     runs-on: ubuntu-latest
