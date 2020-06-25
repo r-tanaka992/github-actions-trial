@@ -63,3 +63,14 @@ jobs:
         run: yarn install
       - name: Run test
         run: yarn test:e2e:headless
+
+  # lint
+  lint:
+    name: lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: yarn install
+        run: yarn install
+      - name: Run lint
+        run: yarn lint
