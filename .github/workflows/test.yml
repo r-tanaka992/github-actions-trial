@@ -52,3 +52,14 @@ jobs:
         run: yarn install
       - name: Run test
         run: yarn test:unit
+
+  # E2Eテスト
+  e2e-test:
+    name: e2e-test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: yarn install
+        run: yarn install
+      - name: Run test
+        run: yarn test:e2e:headless
