@@ -81,3 +81,7 @@ jobs:
         run: yarn install
       - name: Build storybook
         run: yarn build-storybook
+      - uses: actions/upload-artifact@v2
+        with:
+          name: storybook
+          path: .out/
