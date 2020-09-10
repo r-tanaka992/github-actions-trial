@@ -71,3 +71,13 @@ jobs:
         run: yarn install
       - name: Run lint
         run: yarn lint
+
+  storybook:
+    name: storybook
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: yarn install
+        run: yarn install
+      - name: Build storybook
+        run: yarn build-storybook
